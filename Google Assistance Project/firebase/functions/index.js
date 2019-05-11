@@ -398,8 +398,8 @@ app.intent(EMAIL_INTENT, (conv, params, emailOption)=> {
         const sgMail = require('@sendgrid/mail');
         sgMail.setApiKey(process.env.SENDGRID_API_KEY);
         const msg = {
-          //to: 'dilgill8036@gmail.com',
-          to: 'chan.kham005@gmail.com',
+         
+          to: 'test@gmail.com',
           from: 'test@example.com',
           subject: 'Workout plan from Coach Chan',
           text: 'Do the following workout at least 30 minutes: \n\n' + 
