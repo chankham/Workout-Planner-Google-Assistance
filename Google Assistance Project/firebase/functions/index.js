@@ -156,14 +156,6 @@ function shuffle(originalArray) {
 }
 
 app.intent(HEIGHT_INTENT, (conv, params, heightRange) => {
-    
-    // var i;
-    // var workOuts = ["pushups", "situps", "cardio", "curls"];
-    // console.log("in height");
-    // var newArray = shuffle(workOuts);
-    // for(i=0; i < 4; i++)
-    // console.log('new Randomized array ', newArray[i]);
-    
     var r_h = /\d+/g;
     
     h_array = heightRange.match(r_h);
